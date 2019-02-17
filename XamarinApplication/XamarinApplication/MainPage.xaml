@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinApplication.MainPage">
-             <StackLayout>
-                   <Label Text="BENCHMARK TEST" Font="Monospace" FontSize="35" VerticalOptions="Center" HorizontalOptions="Center" />
-                   <Button Text="EMPEZAR" HorizontalOptions="Center" Clicked="Button_OnClicked"></Button>
-                   <Label x:Name="Result" Text="" Font="Monospace" FontSize="20" VerticalOptions="Center"/>
-              </StackLayout>       
-  
+    <StackLayout>
+        <Label Text="BENCHMARK TEST" Font="Monospace" FontSize="35" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button Text="START" HorizontalOptions="Center" Clicked="Button_OnClicked"></Button>
+        <ScrollView>
+            <Label x:Name="Result" Text="" Font="Monospace" FontSize="20" VerticalOptions="Center"/>
+        </ScrollView>
+    </StackLayout>
+
 </ContentPage>
